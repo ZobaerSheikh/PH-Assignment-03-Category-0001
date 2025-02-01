@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Shop</title>
+  <!-- Fonts - Sora & ADLaM Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <!-- Tailwind-CSS & daisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS -->
+  <style>
+    .font-adlam-display {
+      font-family: "ADLaM Display", serif;
+    }
+    .font-sora {
+      font-family: "Sora", serif;
+    }
+  </style>
+  <!-- Custom Colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ps-accent': '#FFDC26',
+            'ps-primary':'#FFF9F4',
+            'ps-secondary':'#FFF9F4',
+            'ps-text':'#111111',
+            'ps-card-bg':'#F9DF8A',
+            'dark-4':'#A0A0A0',
+            'ps-footer-bg':'#FFDC26',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Fontawesome Kit -->
+  <script src="https://kit.fontawesome.com/96cbc0014a.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-sora overflow-x-hidden">
+    <!-- Header Section -->
+    <header class="">
+      <!-- Navigation Section -->
+      <nav class="bg-ps-primary">
+        <div class="navbar container mx-auto">
+          <div class="navbar-start">
+            <img src="./assets/logo-header.png" alt="">
+            <a class="lg:flex btn btn-ghost text-[26px] font-normal">Browse<span class="text-ps-accent">4</span>Pets</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Find a pet</a></li>
+            <li><a>Breeds</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+            <div class="dropdown relative">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-36 p-2 shadow absolute right-2">
+              <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact Us</a></li>
+                <a class="btn py-1 px-8 mb-2 bg-ps-primary hover:text-yellow-400 border border-ps-accent mr-3 hover:bg-ps-primary hover:border-yellow-300">Login</a>
+                <a class="btn py-1 px-8 bg-ps-accent hover:border-ps-accent hover:bg-yellow-400">Register</a>
+              </ul>
+            </div>
+            <!-- <a class="btn hidden lg:flex">Button</a> -->
+            <button class="hidden btn btn-ghost btn-circle lg:flex">
+              <div class="indicator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                </svg>
+              </div>
+            </button>
+            <button class="hidden btn btn-ghost btn-circle lg:flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+            <a class="hidden lg:flex btn py-2 px-8 bg-ps-primary hover:text-yellow-400 border border-ps-accent mr-3 hover:bg-ps-primary hover:border-yellow-300">Login</a>
+            <a class="hidden lg:flex btn py-2 px-8 bg-ps-accent hover:border-ps-accent hover:bg-yellow-400">Register</a>
+          </div>
+        </div>
+      </nav>
+    
+</body>
+</html>
